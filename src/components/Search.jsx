@@ -24,11 +24,7 @@ export default function Search() {
   return location != "/login" && location != "/signUp" ? (
     <Section>
       <div>
-        <img
-          className="search"
-          src={"./public/assets/icon-search.svg"}
-          alt=""
-        />
+        <img className="search" src={"./assets/icon-search.svg"} alt="" />
 
         <input
           type="text"
