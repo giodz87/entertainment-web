@@ -6,7 +6,7 @@ export default function Header() {
 
   return location != "/login" && location != "/signUp" ? (
     <Section>
-      <img src={"./public/assets/logo.svg"} alt="" />
+      <img src={"./assets/logo.svg"} alt="" />
       <div className="imges">
         <Link to={"/"}>
           <img
@@ -19,7 +19,7 @@ export default function Header() {
                 : {}
             }
             className="imagesSize"
-            src={"./public/assets/main.svg"}
+            src={"./assets/icon-nav-home.svg"}
             alt=""
           />
         </Link>
@@ -34,7 +34,7 @@ export default function Header() {
                   }
                 : {}
             }
-            src={"./public/assets/movie.svg"}
+            src={"./assets/icon-nav-movies.svg"}
             alt=""
             className="imagesSize"
           />
@@ -50,7 +50,7 @@ export default function Header() {
                   }
                 : {}
             }
-            src={"./public/assets/shape.svg"}
+            src={"./assets/icon-nav-tv-series.svg"}
             alt=""
             className="imagesSize"
           />
@@ -66,13 +66,13 @@ export default function Header() {
                   }
                 : {}
             }
-            src={"./public/assets/path.svg"}
+            src={"./assets/icon-nav-bookmark.svg"}
             alt=""
             className="imagesSize"
           />
         </Link>
       </div>
-      <img className="avatar" src={"./public/assets/image-avatar.png"} alt="" />
+      <img className="avatar" src={"./assets/image-avatar.png"} alt="" />
     </Section>
   ) : null;
 }

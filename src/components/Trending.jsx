@@ -1,9 +1,6 @@
 import React, { useContext } from "react";
 import { Box, Section } from "../stylesComponents/MoviesStyles";
 import { MyContext } from "../App";
-import movie from "../../public/assets/icon-category-movie.svg";
-import unpath from "../../public/assets/unpath.svg";
-import iconPath from "../../public/assets/whpath.svg";
 import { styled } from "styled-components";
 export default function Trending() {
   const context = useContext(MyContext);
@@ -29,7 +26,11 @@ export default function Trending() {
             .map((item, index) => (
               <div className="scrol" key={index}>
                 <img
-                  src={item.isBookmarked ? iconPath : unpath}
+                  src={
+                    item.isBookmarked
+                      ? "./assets/whpath.svg"
+                      : "./assets/unpath.svg"
+                  }
                   alt=""
                   className="save"
                   onClick={() => {
@@ -64,7 +65,11 @@ export default function Trending() {
                       <circle opacity="0.5" cx="1" cy="1" r="1" fill="white" />
                     </svg>
                     <div className="category">
-                      <img className="iconMovie" src={movie} alt="" />
+                      <img
+                        className="iconMovie"
+                        src={"./assets/icon-category-movie.svg"}
+                        alt=""
+                      />
                       <p>{item.category}</p>
                     </div>
                     <svg

@@ -12,6 +12,7 @@ export default function SignUp() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   const Submit = (e) => {
     const prevUsers = JSON.parse(localStorage.getItem("users"));
     if (prevUsers) {
@@ -30,7 +31,7 @@ export default function SignUp() {
 
   return (
     <Box>
-      <img src={"./public/assets/logo.svg"} alt="logo" />
+      <img src={"./public/assets/logo.sg"} alt="logo" />
       <Section>
         <form onSubmit={handleSubmit(Submit)}>
           <h2>Sign Up</h2>
